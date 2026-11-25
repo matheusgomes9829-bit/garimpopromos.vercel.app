@@ -224,7 +224,12 @@ src="https://www.facebook.com/tr?id=1608924700676316&ev=PageView&noscript=1"></n
   }
   ["cta-top", "cta-hero", "cta-footer"].forEach(function (id) {
     var el = document.getElementById(id);
-    if (el) el.addEventListener("click", function () { trackLead(id); });
+    if (el) el.addEventListener("click", function (ev) {
+      trackLead(id);
+      ev.preventDefault();
+      var href = el.href;
+      setTimeout(function () { location.href = href; }, 300);
+    });
   });
   if (location.hash === "#privacidade") { var d = document.getElementById("privacidade"); if (d) d.open = true; }
 })();
