@@ -32,7 +32,19 @@ fbq('track', 'Lead', {content_name: 'link-direto'});
   <a id="go" href="https://chat.whatsapp.com/DjnF4j95YLJFnu9bXHktWR">Entrar no grupo</a>
 </div>
 <script>
-  setTimeout(function(){ location.replace("https://chat.whatsapp.com/DjnF4j95YLJFnu9bXHktWR"); }, 600);
+  (function(){
+    var CODE="DjnF4j95YLJFnu9bXHktWR", WEB="https://chat.whatsapp.com/"+CODE;
+    var ua=navigator.userAgent||"", isAndroid=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua);
+    var app = isAndroid
+      ? "intent://chat?code="+CODE+"#Intent;scheme=whatsapp;package=com.whatsapp;S.browser_fallback_url="+encodeURIComponent(WEB)+";end"
+      : "whatsapp://chat?code="+CODE;
+    document.getElementById("go").href = (isAndroid||isIOS) ? app : WEB;
+    setTimeout(function(){
+      if (!(isAndroid||isIOS)) { location.replace(WEB); return; }
+      location.href = app;
+      setTimeout(function(){ if (!document.hidden) location.replace(WEB); }, 1600);
+    }, 400);
+  })();
 </script>
 </body>
 </html>
