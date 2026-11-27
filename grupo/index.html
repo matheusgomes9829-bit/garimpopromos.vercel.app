@@ -2,11 +2,20 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Grupo de promoções | Garimpo das Promos</title>
 <meta name="description" content="Grupo gratuito de promoções do Garimpo das Promos: ofertas de 40% ou mais no Mercado Livre e na Shopee, com o preço conferido.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="preload" as="image" href="/assets/perfil.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet"></noscript>
+<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
@@ -16,33 +25,63 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1608924700676316');
 fbq('track', 'PageView');
 </script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1608924700676316&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
 <style>
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050B16;color:#fff;font-family:Montserrat,system-ui,sans-serif}
-  .box{padding:28px 22px;max-width:380px;text-align:center}
-  h1{font-size:24px;line-height:1.25;margin:0 0 12px}
-  h1 span{color:#FFCC33}
-  p{color:#B9C3D3;font-size:15px;line-height:1.55;margin:0 0 10px}
-  ul{list-style:none;padding:0;margin:16px 0 22px;color:#DCE3EE;font-size:14px;line-height:1.9;text-align:left;display:inline-block}
-  a.btn{display:block;padding:16px 22px;border-radius:14px;background:#FFCC33;color:#0B0B0F;font-weight:800;text-decoration:none;font-size:16px}
-  small{display:block;margin-top:16px;color:#6F7C92;font-size:11.5px;line-height:1.5}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#000}
+  body{min-height:100vh;color:#fff;font-family:Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+    background:radial-gradient(90% 38% at 50% 12%,rgba(255,194,26,.14) 0%,rgba(255,194,26,0) 60%),linear-gradient(180deg,#0B0B0F 0%,#000 55%);background-color:#000}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:32px 32px;-webkit-mask-image:radial-gradient(70% 45% at 50% 25%,#000,transparent);mask-image:radial-gradient(70% 45% at 50% 25%,#000,transparent)}
+  .topbar{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(0,0,0,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(37,211,102,.25);padding-top:env(safe-area-inset-top)}
+  .topbar .in{max-width:440px;margin:0 auto;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .live{display:flex;align-items:center;gap:8px;border:1.5px solid rgba(37,211,102,.7);border-radius:999px;padding:8px 12px;background:rgba(37,211,102,.08);color:#25D366;font-size:10px;font-weight:800;letter-spacing:.6px;white-space:nowrap}
+  .dot{width:7px;height:7px;border-radius:50%;background:#25D366;box-shadow:0 0 8px #25D366;animation:blink 1.6s ease-in-out infinite}
+  .topbtn{position:relative;overflow:hidden;flex-shrink:0;height:40px;padding:0 14px;border-radius:12px;display:inline-flex;align-items:center;gap:7px;background:#25D366;color:#06240F;text-decoration:none;font-size:13.5px;font-weight:800;box-shadow:0 6px 18px rgba(37,211,102,.35);animation:hop 2.8s ease-in-out infinite;-webkit-tap-highlight-color:transparent}
+  .wrap{max-width:440px;margin:0 auto;padding:96px 22px 36px;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;box-shadow:0 18px 50px rgba(0,0,0,.6),0 0 60px rgba(31,75,255,.25)}
+  h1{margin:22px 0 0;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:40px;line-height:1.05;letter-spacing:.3px}
+  h1 span{color:#FFC21A}
+  p{margin:14px 0 0;font-size:15px;line-height:1.5;color:#C4C4CC;max-width:330px}
+  ul{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:13px;font-weight:700;color:#C4C4CC}
+  ul b{color:#FFC21A}
+  .cta{position:relative;overflow:hidden;margin-top:26px;width:100%;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:10px;
+    background:linear-gradient(180deg,#FFD95C 0%,#FFC21A 55%,#D99A00 100%);color:#000;text-decoration:none;font-size:17px;font-weight:800;
+    box-shadow:0 10px 30px rgba(255,194,26,.35),inset 0 1px 0 rgba(255,255,255,.6);animation:hop 2.8s ease-in-out infinite;-webkit-tap-highlight-color:transparent}
+  .cta::after,.topbtn::after{content:"";position:absolute;top:-20%;left:-60%;width:40%;height:140%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 100%);transform:skewX(-20deg);animation:shine 2.8s ease-in-out infinite}
+  .cta:active,.topbtn:active{transform:scale(.97)}
+  small{display:block;margin-top:26px;color:#6E6E78;font-size:11.5px;line-height:1.5;max-width:330px}
+  @keyframes hop{0%,62%,100%{transform:translateY(0)}70%{transform:translateY(-7px)}78%{transform:translateY(0)}84%{transform:translateY(-3px)}90%{transform:translateY(0)}}
+  @keyframes shine{0%,30%{left:-60%}60%,100%{left:130%}}
+  @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.15;transform:scale(.55)}}
+  @media (max-width:420px){.live{font-size:9.5px;padding:7px 10px;letter-spacing:.3px}.topbtn{padding:0 12px;font-size:13px}}
+  @media (max-width:360px){.live{font-size:8.6px;padding:7px 8px}h1{font-size:34px}}
+  @media (prefers-reduced-motion:reduce){.cta,.cta::after,.topbtn,.topbtn::after,.dot{animation:none}}
 </style>
 </head>
 <body>
-<main class="box">
-  <h1>Grupo de promoções <span>Garimpo das Promos</span></h1>
-  <p>Eu garimpo ofertas de 40% ou mais no Mercado Livre e na Shopee, confiro o preço e mando no grupo do WhatsApp.</p>
-  <ul>
-    <li>✓ Grupo gratuito</li>
-    <li>✓ Promoções novas todo dia</li>
-    <li>✓ Você sai quando quiser</li>
-  </ul>
-  <a class="btn" id="entrar" href="https://chat.whatsapp.com/DjnF4j95YLJFnu9bXHktWR" rel="noopener">Entrar no grupo do WhatsApp</a>
+<header class="topbar"><div class="in">
+  <span class="live"><span class="dot" aria-hidden="true"></span>AO VIVO: PROMOÇÕES CAINDO AGORA</span>
+  <a class="topbtn" id="entrar-topo" href="https://chat.whatsapp.com/DjnF4j95YLJFnu9bXHktWR" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.8-5.2A8.5 8.5 0 1 1 8.2 19.2L3 21z"/></svg> Entrar</a>
+</div></header>
+<main class="wrap">
+  <img class="avatar" src="/assets/perfil.webp" alt="Matheus, do Garimpo das Promos" width="150" height="150" fetchpriority="high" decoding="async">
+  <h1>GRUPO DE <span>PROMOÇÕES</span><br>NO WHATSAPP</h1>
+  <p>Eu garimpo ofertas de 40% ou mais no Mercado Livre e na Shopee, confiro o preço e mando no grupo.</p>
+  <ul><li><b>✓</b> Grupo gratuito</li><li><b>✓</b> Promoções todo dia</li><li><b>✓</b> Sai quando quiser</li></ul>
+  <a class="cta" id="entrar" href="https://chat.whatsapp.com/DjnF4j95YLJFnu9bXHktWR" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.8-5.2A8.5 8.5 0 1 1 8.2 19.2L3 21z"/></svg> Entrar no grupo do WhatsApp</a>
   <small>Sou afiliado: não vendo produtos. Os preços são os do momento em que a oferta é enviada e podem mudar. Ao entrar, seu número fica visível aos participantes, conforme as regras do WhatsApp.</small>
 </main>
 <script>
-  document.getElementById('entrar').addEventListener('click', function(){
-    try { if (typeof fbq === 'function') fbq('track', 'Lead', {content_name: 'grupo-botao'}); } catch(e) {}
+(function(){
+  ["entrar","entrar-topo"].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener('click',function(){
+      try { if (typeof fbq==='function') fbq('track','Lead',{content_name:id==='entrar'?'grupo-botao':'grupo-topo'}); } catch(e) {}
+    });
   });
+})();
 </script>
 </body>
 </html>
